@@ -1,0 +1,22 @@
+# Gradle
+.gradle/
+build/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# Minecraft runtime
+run/
+runs/
+
+# Bundled dependencies (third-party jars, not for redistribution)
+libs/*.jar
+
+# OS files
+Thumbs.db
+.DS_Store

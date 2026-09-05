@@ -1,0 +1,38 @@
+modLoader = "javafml" #mandatory
+loaderVersion = "${loader_range}" #mandatory
+license = "MIT"
+authors = "ZhaiDu11264"
+
+[[mods]] #mandatory
+modId = "cleverhopper" #mandatory
+version = "${mod_version}" #mandatory
+displayName = "Clever Hopper" #mandatory
+description = '''
+Lets vanilla hoppers receive items pushed off the end of Create belts,
+just like a basin does. No more items spilling on the floor when you
+point a belt at a regular hopper.
+'''
+
+[[mixins]]
+config = "cleverhopper.mixins.json"
+
+[[dependencies.cleverhopper]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neoforge_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cleverhopper]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cleverhopper]]
+modId = "create"
+type = "required"
+versionRange = "[6.0.0,)"
+ordering = "AFTER"
+side = "BOTH"
